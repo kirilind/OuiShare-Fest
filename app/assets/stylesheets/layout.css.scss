@@ -1,23 +1,139 @@
-.nav.navbar-nav{
+.visible-link{
+  text-shadow: 1px 1px white;
+}
 
-  .tickets-highlight{
-    padding: 17px 20px 0px 5px;
+p.little{
+  font-size: 14px;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.awards-text{
+  padding: 20px 0 0 20px;
+}
+
+#myCarousel{
+  margin-top: 25px;
+}
+.ouishare_stencil{
+  text-transform: uppercase;
+  font-family: 'ouisharestencilbold';
+}
+.triangle_bg{
+  a{
+    color: #34495e;
   }
+}
+
+.press-content{
+  height:200px;
+  background-color: #fff;
+  display: table;
+  width: 85%;
+  margin: auto;
+}
+
+.quote-left-carousel{
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+.quote-right-carousel{
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+
+}
+
+.press-text{
+  h3{
+    font-size:25px;
+  }
+  text-align: center;
+  height: auto;
+  width: 80%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.label-press{
+  a{
+    color: #0b0b6d;
+    font-family:'naiv_normal';
+  }
+  color: #0b0b6d;
+  font-family:'naiv_normal';
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 7.5%;
+}
+
+.navbar .nav li.dropdown:hover{
+  background-color: #34495e;
+}
+
+
+/* Header showing dropdown on hover */
+.navbar .nav li.dropdown:hover .dropdown-menu {
+  background-color: #34495e;
+  opacity: 1;
+  padding: 0;
+  visibility: visible;
+}
+
+.navbar .navbar-brand{
+  padding: 12px 28px 11px 17px;
+}
+
+h3{
+  color: #0b0b6d;
+}
+
+.navbar .nav > li > a{
+
+  padding: 12px 14px;
+}
+
+.nav.navbar-nav{
 
   .highlight{
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #48c9b0;
+    color: #fff;
     -o-transition: 800ms;
     -ms-transition: 800ms;
     -moz-transition: 800ms;
     -webkit-transition: 800ms;
     transition: 800ms;
+    // font-family: arial;
+    font-weight: bold;
   }
-  .highlight:hover{
-    background-color: #34495e;
+
+  .tickets-highlight{
+    margin-right: 10px;
+    .highlight{
+      background-color: #48c9b0;
   }
+    .highlight:hover{
+      background-color: #34495e;
+      color: #fff;
+    }
+  }
+
+  .blog-highlight{
+    .highlight{
+    // background-color: #0b0b6d;
+    color: #0b0b6d;
+  }
+    .highlight:hover{
+      background-color: #34495e;
+      color: #fff;
+    }
+  }
+
+  
 
   .header-vertical-align{
     margin-top: 10px;
@@ -26,10 +142,17 @@
 }
 .navbar.navbar-default{
   .language-header{
-    width: 65px;
-    position: relative;
-    top: -2px;
-    right: -32px;
+    color: #0b0b6d;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: naiv_normal;
+    border: none;
+    width: 50px;
+    background: url("/assets/arrow_language.png") no-repeat right;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin-top: 15px;
+    outline: none;
   }
 }
 

@@ -1,8 +1,82 @@
-//encoding: utf-8
-.container
-  %h1
-    Sched TEst
 
-  / =@request_response.html_safe
-  %a#sched-embed{:href => "http://testfffffffff2013.sched.org/"}  View the testfffffffff mobile app
-  %script{:type => "text/javascript", :src => "http://testfffffffff2013.sched.org/js/embed.js"}
+#_schedule.blank_bg
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.main_schedule.title')
+      %br
+      %br
+      .container
+        %p
+          = t('dynamic_translations.main_schedule.first_part')
+          
+          / %br
+          / %br
+          / %br
+          / = t('dynamic_translations.main_schedule.second_part')
+
+    .row.centered
+      %a#sched-embed{:href => "http://ouisharefest14.sched.org/"}
+      %script{:type => "text/javascript", :src => "http://ouisharefest14.sched.org/js/embed.js"}
+
+.grey_bg#_sharing_fair
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.sharing_fair.title')
+    %br
+    %br
+    .col-xs-12.col-md-6.col-lg-6
+      
+      
+      .row.centered
+        %p
+          = t('dynamic_translations.sharing_fair.text')
+      %br
+      %br
+      
+      
+      %a{:href => 'http://sched.co/1dhcKMF', :target => '_blank'}
+        %button.btn.btn-embossed.btn-primary
+          = t('dynamic_translations.tickets.find_out_more')
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      %a{:href => 'join#_tickets'}
+        %button.btn.btn-embossed.btn-primary
+          = t('dynamic_translations.tickets.register_for_free')
+
+
+    .col-xs-12.col-md-6.col-lg-6      
+      %img{:src => '/assets/sharing_fair.png', :alt => 'sharing fair picture', :style => 'width: 560px;'}
+      
+          
+
+.yellow_bg#_events
+  .container
+    .row.centered
+      %h3.ouishare_stencil
+        = t('dynamic_translations.satellite_events.title')
+    %br
+    %br
+    .col-xs-12.col-md-6.col-lg-6
+      
+      
+      .row.centered
+        %p
+          = t('dynamic_translations.satellite_events.text')
+      %br
+      %br
+      
+      .row
+      %a{:href => 'https://docs.google.com/forms/d/1xwFAL9C5AHZgBAeC6tGD6_eX0Ca1u00ZawZEueHczII/viewform', :target => '_blank'}
+        %button.btn.btn-embossed.btn-primary
+          = t('dynamic_translations.satellite_event.link_title')
+    .col-xs-12.col-md-6.col-lg-6      
+      %img{:src => '/assets/SteBo_5093_Mid_medium.png', :alt => 'satellite event picture', :style => 'width: 560px;'}
+
+
+
+    
+
+      
+
+    
